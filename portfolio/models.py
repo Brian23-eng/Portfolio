@@ -9,5 +9,11 @@ class Project(models.Model):
     technology = models.CharField(blank=True, max_length=200)
     image = models.ImageField(blank=False)
     
+    def __str__(self):
+        return f'{self.title}'
+
+    def delete_project(self):
+        self.delete()
+    
 
 
