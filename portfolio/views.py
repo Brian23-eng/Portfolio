@@ -13,7 +13,7 @@ def project(request):
         'projects':projects
     }
     
-    return render(request, 'project.html', context)
+    return render(request, 'projects.html', context)
 
 
 def project_detail(request, pk):
