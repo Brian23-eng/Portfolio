@@ -1,6 +1,6 @@
 from django.db import models
 class Category(models.Model):
-     name: models.CharField(max_length=50)
+     name: models.CharField(blank=True, max_length=50)
      
      
 class Post(models.Model):
