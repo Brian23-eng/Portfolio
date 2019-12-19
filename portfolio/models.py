@@ -12,8 +12,18 @@ class Project(models.Model):
     def __str__(self):
         return f'{self.title}'
 
+    def save_project(self):
+        self.save
+        
     def delete_project(self):
-        self.delete()
-    
+        self.delete
+        
+    class Meta:
+        ordering = ['title']
+        
+    @classmethod
+    def get_all_projects(cls):
+        images = cls.objects.all()
+        return images
 
 

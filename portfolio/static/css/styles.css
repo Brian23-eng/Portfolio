@@ -47,32 +47,6 @@
 
 /*----- Search -----*/
 
-.search-form {
-    float: right;
-    display: inline-block;
-}
-
-.search-form input {
-    width: 200px;
-    height: 30px;
-    padding: 0px 8px;
-    float: left;
-    border-radius: 2px 0px 0px 2px;
-    font-size: 13px;
-}
-
-.search-form button {
-    height: 30px;
-    padding: 0px 7px;
-    float: right;
-    border-radius: 0px 2px 2px 0px;
-    background: #66a992;
-    font-size: 13px;
-    font-weight: 600;
-    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-    color: #fff;
-}
-
 
 /*----- Responsive -----*/
 
@@ -128,7 +102,7 @@
     }
     .toggle-nav {
         padding: 20px;
-        float: left;
+        float: none;
         display: inline-block;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
         border-radius: 3px;
@@ -142,12 +116,5 @@
     .toggle-nav.active {
         text-decoration: none;
         color: #66a992;
-    }
-    .search-form {
-        margin: 12px 0px 0px 20px;
-        float: left;
-    }
-    .search-form input {
-        box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.1);
     }
 }
