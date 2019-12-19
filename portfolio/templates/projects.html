@@ -3,10 +3,10 @@
 <div class="container-fluid">
     <h3 class="text-center">Projects</h3>
     <div class="row">
-        {% for projects in project %}
+        {% for project in projects %}
         <div class="col-md-4">
             <div class="card mb-2">
-                <img class="card-img-top" src="{{project.image.url}}" alt="{{ project.title }}">
+                <a href="{{project.url}}" target="_blank"><img class="card-img-top" src="{{project.image.url}}" alt="{{ project.title }}"></a>
                 <div class="card-body">
                     <h5 class="card-title">{{ project.title }}</h5>
                     <p class="card-text">{{ project.description }}</p>

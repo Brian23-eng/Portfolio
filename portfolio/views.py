@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from . models import Project
 
 def home(request):
@@ -8,8 +8,12 @@ def home(request):
 
 def project(request):
     title = "Portfolio"
-    projects = Project.get_all_projects()
-    return render(request, 'projects.html',{'projects':projects, 'title':title})
+    projects = Project.objects.all()
+    context = {
+        'projects':projects, 
+        'title':title
+    }
+    return render(request, 'projects.html',locals())
 
 
 def project_detail(request, pk):
